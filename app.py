@@ -10,9 +10,7 @@ try:
     label_encoder = joblib.load('SavedModels/label_encoder.pkl')
 except Exception as e:
     print(f"Error loading models: {e}")
-    model = None
-    label_encoder = None
-
+    
 @app.route('/')
 def home():
     return "<h1> Machine Learning Model is Running!</h1>"
