@@ -6,8 +6,8 @@ import os
 app = Flask(__name__)
 
 try:
-    model = joblib.load('SavedModels/ml_model.pkl')
-    label_encoder = joblib.load('SavedModels/label_encoder.pkl')
+    model = joblib.load('./SavedModels/ml_model.pkl')
+    label_encoder = joblib.load('./SavedModels/label_encoder.pkl')
 except Exception as e:
     print(f"Error loading models: {e}")
     
